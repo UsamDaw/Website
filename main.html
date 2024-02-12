@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoriprøver Klasse B</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="back"><img src="pexels-mike-bird-244553.jpg" alt=""></div>
+    <div class="sidebar sidebar-left">
+        <div class="arrow" id="arrow"></div>
+        <ul style="user-select: none;">
+            <li>
+                <div class="image-container">
+                    <img src="munkerud+skilt+retusjert.jpg" alt="" style="height: 190px;">
+                    <p class="sideways-text">Teoriprøve  #1</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="InkedRostockgata+kjB8ring+mot+skilt+ny.jpg" alt="" style="height: 190px;">
+                    <p class="sideways-text">Teoriprøve  #2</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="MEDIA_FILE_ID_78398__E16-Chriswille-flickr.jpg" alt="" style="height: 190px;">
+                    <p class="sideways-text">Teoriprøve  #3</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="ab15cff1-6daa-4870-8cae-06fa07e68472.webp" alt="" style="height: 190px;">
+                    <p class="sideways-text">Teoriprøve  #4</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <img src="2a9795b5a566f798f32bea97aa9fd41f820b3c19_LARGE.jpg" alt="" style="height: 190px;">
+                    <p class="sideways-text">Teoriprøve  #5</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sidebar sidebar-right">
+        <div class="arrow2" id="arrowRight"></div>
+        <ul style="user-select: none;">
+            <li>
+                <div class="image-container2">
+                    <img src="1a.jpg" alt="" style="height: 190px;">
+                    <p class="sideways-text2">Teoriprøve  #6</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container2">
+                    <img src="7.jpg" alt="" style="height: 190px;">
+                    <p class="sideways-text2">Teoriprøve  #7</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container2">
+                    <img src="53570970_2381528428553557_2122220122083950592_n.png" alt="" style="height: 190px;">
+                    <p class="sideways-text2">Teoriprøve  #8</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container2">
+                    <img src="rundkjoring_blinklys.jpg" alt="" style="height: 190px;">
+                    <p class="sideways-text2">Teoriprøve  #9</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container2">
+                    <img src="10.jpg" alt="" style="height: 190px;">
+                    <p class="sideways-text2">Teoriprøve  #10</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="content"></div>
+
+    <div>
+        <div class="eye-white">
+        <div class="eye-ball"></div>
+        </div>
+        <div class="eye-white">
+        <div class="eye-ball"></div>
+        </div>
+    </div>
+    <div class="lalala">
+        <img id="myGif" src="jayndayu1-tongue-out.gif" alt="">
+    </div>
+
+    <script> 
+    // Source https://www.youtube.com/watch?v=DKeKIjEOt4M //
+        var  eye = document.getElementsByClassName("eye-ball");
+        document.onmousemove = function(){
+        var width = window.innerWidth;
+        var x = event.clientX;
+        var a = x / width;
+        a= a *100;
+        var height = window.innerHeight;
+        var y = event.clientY;
+        var b = y / height;
+        b= b *100;
+        eye[0].style.cssText = "left: " + a + "%; top: " + b + "%;" + "transform:translate(-"+a+"%,-"+b+"%)";
+        eye[1].style.cssText = "left: " + a + "%; top: " + b + "%;" + "transform:translate(-"+a+"%,-"+b+"%)"; 
+        }
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>
